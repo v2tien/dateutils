@@ -3,11 +3,17 @@ package com.example.v2tien.myapplication;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.v2tien.dateutils.DateUtils;
+
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        DateUtils.getTime(new Date());
     }
 }

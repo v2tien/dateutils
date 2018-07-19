@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.example.v2tien.myapplication' // CREATE A GROUP ID FOR YOUR LIBRARY
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.example.v2tien.myapplication' // CREATE A GROUP ID FOR YOUR LIBRARY
+                artifactId 'dateutils' // THE NAME OF YOUR MODULE
+
+                name 'DateUtils' // YOUR LIBRARY NAME
+                description 'This is library date utils' // YOUR LIBRARY DESCRIPTION
+                url 'https://github.com/v2tien/dateutils' // YOUR SITE
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'v2tien93' //YOUR ID
+                        name 'v2tien93' //YOUR NAME
+                        email 'v2tien93@gmail.com' //YOUR EMAIL
+                    }
+                }
+                scm {
+                    connection 'https://github.com/v2tien/dateutils.git' // YOUR GIT REPO
+                    developerConnection 'https://github.com/v2tien/dateutils.git' // YOUR GIT REPO
+                    url 'https://github.com/v2tien/dateutils' // YOUR SITE
+
+                }
+            }
+        }
+    }
+}
